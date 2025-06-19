@@ -1,0 +1,7 @@
+import string
+mssge = 'Hello, World!'
+lenght = len(mssge)
+print(lenght)
+mssgeUpper = mssge.upper()
+print(mssgeUpper)
+print(mssge.replace('World', 'Python'))
