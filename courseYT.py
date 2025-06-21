@@ -21,21 +21,3 @@ def get_apartment_number():
 print("Welcome to the apartment number finder!")
 
 
-
-print(True == 1, True is 1)
-print([1,2,3] == (1,2,3))
-print({1: 1, True: 2})
-x = (1,2,3)
-print(x[1:2])
-string = "Hello, world!"
-print(string)
-a= [1, 2, 3]
-b = a
-b.append(4)
-print(a, b)
-x = 13
-num = 0 if x < 5 else x > 17
-print(num)
-print(type(i**2 for i in range(10)))
-s= {1,2,3}
-print(s[1])

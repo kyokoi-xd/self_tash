@@ -5,3 +5,25 @@ print(lenght)
 mssgeUpper = mssge.upper()
 print(mssgeUpper)
 print(mssge.replace('World', 'Python'))
+
+
+students = {}
+
+while True:
+    student = input("Enter student name with graduates (or '' to finish):")
+    if student == '':
+        break
+
+    try:
+        name, grade = student.split(":")
+        grade = list(map(int, grade.split(",")))
+        students[name.strip()] = grade
+    except ValueError:
+        print("Invalid input format. Please use 'Name: grade1,grade2,...' format.")
+
+print("Students and their grades:")
+
+for name, grades in students.items():
+    average_grade = sum(grades) / len(grades) if grades else 0
+    print(f"{name}: {grades} (Average: {average_grade:.2f})")
+
